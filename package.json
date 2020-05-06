@@ -1,0 +1,19 @@
+{
+  "name": "sample-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Raju-2101/sample-portfolio/issues"
+  },
+  "homepage": "https://github.com/Raju-2101/sample-portfolio#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
