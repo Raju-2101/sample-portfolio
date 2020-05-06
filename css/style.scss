@@ -1,0 +1,649 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+  overflow-x: hidden;
+  transition: all 0.3s ease;
+}
+
+header .nav-bar,
+header .nav-bar .left,
+header .nav-bar .left .nav-links,
+header .nav-bar .left .mode {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+h1 {
+  font-size: 70px;
+  line-height: 1.5;
+}
+
+h2 {
+  width: 100%;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+p {
+  color: #4e4a4a;
+}
+
+.line {
+  height: 6px;
+  background-color: #888686;
+  opacity: 7%;
+}
+
+//nav-bar
+header {
+  padding: 30px 5%;
+  .nav-bar {
+    .logo {
+      font-size: 30px;
+      font-weight: 600;
+      cursor: pointer;
+      color: black;
+      text-decoration: none;
+    }
+
+    .left {
+      .nav-links {
+        list-style-type: none;
+        margin-right: 100px;
+        li {
+          margin: 0 15px;
+          cursor: pointer;
+
+          a {
+            text-decoration: none;
+            margin-left: 13px;
+            font-size: 17px;
+            font-weight: 500;
+          }
+        }
+      }
+      .mode {
+        cursor: pointer;
+        .mode-img {
+          width: 20px;
+          height: 20px;
+          background-color: black;
+          border-radius: 50%;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+//body
+section {
+  padding: 0 10%;
+
+  .parent {
+    margin-top: 200px;
+  }
+
+  //title
+  .title {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    margin-top: 100px;
+
+    .black-box {
+      display: none;
+    }
+
+    .title-line-container {
+      width: 100%;
+      position: absolute;
+      top: 110px;
+      transform: translateX(-10vw);
+      .title-line {
+        max-width: 50%;
+        border-radius: 5px;
+      }
+    }
+
+    .content {
+      margin: auto 0;
+      h1 {
+        margin-bottom: 40px;
+        font-weight: bold;
+      }
+
+      button {
+        position: relative;
+        margin-top: 40px;
+        margin-right: 60px;
+        float: right;
+      }
+    }
+
+    .laptop {
+      width: 660px;
+      height: 900px;
+      transform: translateX(5vw);
+      margin-left: 30px;
+    }
+    .svg-1-container {
+      position: absolute;
+      bottom: -50%;
+      left: -20vw;
+      width: 100%;
+      .svg-1 {
+        max-width: 20%;
+        max-height: 40%;
+      }
+    }
+  }
+
+  //info
+  .info {
+    margin: 200px auto 0 auto;
+    text-align: center;
+    padding: 0 50px;
+    position: relative;
+    max-width: 1100px;
+
+    h6 {
+      font-size: 15px;
+      color: #696777;
+      font-weight: 400;
+    }
+    p {
+      margin-top: 40px;
+    }
+    .svg-2-container {
+      position: absolute;
+      width: 100%;
+      text-align: right;
+      bottom: 0;
+      right: -35vw;
+      transform: translateY(60%);
+      margin: auto;
+      .svg-2 {
+        max-width: 60%;
+        max-height: 62%;
+      }
+    }
+  }
+
+  //services
+  .services {
+    position: relative;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    .notebook-img-container {
+      width: 500px;
+      height: 350px;
+      margin-right: 100px;
+      background-image: url(../images/notebook-beside-the-iphone-on-table-196644.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .content {
+      display: flex;
+
+      .right,
+      .left {
+        div {
+          // margin-top: 90px;
+          margin: 50px;
+          width: 350px;
+
+          h3 {
+            font-size: 22px;
+            font-weight: 500;
+            margin-bottom: 10px;
+          }
+        }
+      }
+
+      img {
+        margin: 0 60px;
+        display: none;
+      }
+    }
+  }
+
+  //work
+  .work {
+    .content {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 50px;
+      img {
+        width: 300px;
+        height: 500px;
+        border: 1px solid black;
+      }
+    }
+    p {
+      float: right;
+      margin-top: 30px;
+    }
+  }
+
+  //contact
+  .contact {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 90px;
+    position: relative;
+    background-image: url(../images/coffee_contact_email_hands_483.png);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+
+    .black-box {
+      background-color: rgb(0, 0, 0);
+      opacity: 75%;
+      width: 110%;
+      height: 100%;
+      position: absolute;
+      z-index: 0;
+      transform: translateX(-100px);
+    }
+
+    h1 {
+      color: white;
+      position: relative;
+      z-index: 1;
+      margin-right: 50px;
+      max-width: 700px;
+    }
+    button {
+      background-color: #e6d964;
+      color: black;
+      position: relative;
+      z-index: 1;
+      width: 170px;
+    }
+  }
+}
+
+//footer
+footer {
+  //social-media
+  .social-media {
+    margin-top: 50px;
+  }
+
+  //copy-right
+  .copyright {
+    color: rgb(114, 113, 113);
+    font-size: 15px;
+    text-align: center;
+    margin: 20px 0;
+  }
+}
+// dark mode
+.dark-mode {
+  background-color: black;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  a,
+  header .logo {
+    color: white;
+  }
+
+  header .nav-bar .left .mode {
+    .mode-img {
+      background-color: white;
+    }
+  }
+
+  p {
+    color: #d3d3d3;
+  }
+
+  button {
+    background-color: white;
+    color: black;
+  }
+
+  section {
+    .info {
+      h6 {
+        color: rgb(206, 206, 206);
+      }
+    }
+
+    .contact {
+      button {
+        background-color: #e6d964;
+      }
+    }
+  }
+}
+
+//
+//
+//
+//
+//
+//
+//
+//media queries
+//
+//
+//
+//
+//
+//
+//
+
+@media screen and (max-width: 1660px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  section {
+    .title {
+      .laptop {
+        max-width: 500px;
+        height: 740px;
+      }
+    }
+
+    .info {
+      h6 {
+        font-size: 13px;
+      }
+    }
+
+    .services {
+      justify-content: center;
+
+      .notebook-img-container {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  section {
+    padding: 0 5%;
+    .title {
+      .laptop {
+        width: 400px;
+        height: 640px;
+        margin-left: 100px;
+        transform: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  header {
+    .nav-bar {
+      .left {
+        .nav-links {
+          display: none;
+        }
+      }
+    }
+  }
+
+  section {
+    .parent {
+      margin-top: 150px;
+    }
+    .title {
+      background-image: url(../images/Person-using-laptop.jpg);
+      background-size: 100%;
+      background-position: bottom;
+      width: 100vw;
+      transform: translateX(-5vw);
+      padding: 20px 5vw;
+      z-index: -1;
+      margin-top: 20px;
+
+      .title-line-container {
+        display: none;
+      }
+
+      .black-box {
+        position: absolute;
+        display: initial;
+        width: 110%;
+        height: 100%;
+        background-color: black;
+        transform: translate(-8%, -20px);
+        opacity: 75%;
+        z-index: 0;
+      }
+
+      .laptop {
+        display: none;
+      }
+      .content {
+        margin-top: 100px;
+        margin-bottom: 0;
+        z-index: 1;
+        h1 {
+          color: white;
+          width: 80%;
+        }
+        p {
+          color: #cfd0d4;
+        }
+
+        button {
+          background-color: #e6d964;
+          color: black;
+        }
+      }
+    }
+
+    .info {
+      .svg-2-container {
+        display: none;
+      }
+    }
+
+    .services {
+      .content {
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+
+        .right,
+        .left {
+          div {
+            width: 50%;
+            margin: 100px auto 0;
+            text-align: center;
+          }
+        }
+
+        .left div:nth-child(1) {
+          margin-top: 0;
+        }
+      }
+    }
+
+    .work {
+      .content {
+        justify-content: space-around;
+        img {
+          &:nth-child(2) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .contact {
+      flex-direction: column;
+      text-align: center;
+      padding: 50px 30px;
+
+      .black-box {
+        transform: translate(0, -50px);
+      }
+
+      h1 {
+        margin: 0 0 50px 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  section {
+    .work {
+      .content {
+        img {
+          &:nth-child(1) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  header {
+    padding: 30px 3%;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  section {
+    padding: 0 3%;
+    .title {
+      transform: translateX(-3%);
+      padding-top: 60px;
+
+      .black-box {
+        transform: translate(-5%, -60px);
+      }
+
+      .content {
+        text-align: left;
+        width: 100%;
+        max-width: 100%;
+        margin: auto;
+
+        h1 {
+          width: 100%;
+        }
+        button {
+          margin-right: 0;
+          left: 0;
+        }
+      }
+    }
+
+    .info {
+      text-align: left;
+      padding: 0;
+      max-width: 100%;
+      padding-left: 20px;
+    }
+
+    .services {
+      .content {
+        .left div {
+          &:nth-child(1) {
+            margin-top: 0;
+          }
+        }
+
+        .right,
+        .left {
+          div {
+            width: 100%;
+            margin-top: 50px;
+
+            h3 {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+
+    .contact {
+      text-align: left;
+      position: relative;
+
+      a {
+        position: relative;
+        left: 0;
+        button {
+          position: relative;
+          left: 0;
+        }
+      }
+    }
+  }
+}
